@@ -24,5 +24,5 @@ function currentLine(katzDeliLine){
   for(let i=1;i<=katzDeliLine.length;i++){
     str=str+` ${i}. ${katzDeliLine[i-1]},`;
   }
-  return str;
+  return str.substring;
 }
