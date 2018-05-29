@@ -7,6 +7,8 @@ function takeANumber(katzDeliLine,person){
 return str;
 }
 
-function nowServing(){
+function nowServing(katzDeliLine){
+  if(katzDeliLine.)
+  var name=katzDeliLine.shift();
   
 }
