@@ -1,9 +1,9 @@
 function takeANumber(katzDeliLine,person){
   katzDeliLine.push(person);
   var n=katzDeliLine.indexOf(person)+1;
-//var n=katzDeliLine.length;
+
   var str=`Welcome, ${person}. You are number ${n} in line.`;
-//var str= "Welcome, "+person+". You are number "+n+" in line"; 
+
 return str;
 }
 
@@ -14,4 +14,15 @@ function nowServing(katzDeliLine){
   var name=katzDeliLine.shift();
   return `Currently serving ${name}.`;
   }
+}
+
+
+function currentLine(katzDeliLine){
+  if(katzDeliLine.length==0)
+  return "The line is currently empty";
+  var str=`The line is currently:`;
+  for(let i=1;i<=katzDeliLine.length;i++){
+    str=str+`${i}. ${katzDeliLine[i-1]}`;
+  }
+  return str;
 }
