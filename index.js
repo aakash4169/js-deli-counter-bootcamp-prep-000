@@ -8,7 +8,8 @@ return str;
 }
 
 function nowServing(katzDeliLine){
-  if(katzDeliLine.)
+  if(katzDeliLine.length==0)
+  return ""
   var name=katzDeliLine.shift();
   
 }
